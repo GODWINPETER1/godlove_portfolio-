@@ -1550,7 +1550,7 @@ input[type="checkbox"] {
   }
   .nav-toggle{
     position: relative;
-    right: 50px;
+    right: 30px;
   }
   .navbar--items {
     position: absolute;
