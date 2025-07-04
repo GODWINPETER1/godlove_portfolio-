@@ -210,6 +210,11 @@ h2 {
   right: 0;
   z-index: 1000;
 }
+.navbar--right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .navbar--items{
   display: flex;
 }
@@ -1406,6 +1411,10 @@ input[type="checkbox"] {
   .nav__hamburger {
     display: flex;
     z-index: 200;
+  }
+  .nav-toggle{
+    position: relative;
+    right: 100px;
   }
   .navbar--items {
     position: absolute;

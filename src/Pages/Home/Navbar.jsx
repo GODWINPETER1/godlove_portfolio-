@@ -85,7 +85,10 @@ function Navbar() {
         </ul>
       </div>
 
-      <ThemeToggle/>
+      <div className="nav-toggle">
+          <ThemeToggle/>
+      </div>
+      
 
       <Link
         to="Contact"
