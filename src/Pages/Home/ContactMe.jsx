@@ -22,7 +22,7 @@ function AchievementsSection() {
           data-aos-delay="150"
         >
           <img 
-            src="./img/car.jpg" 
+            src="./img/car.png" 
             alt="Achievement" 
             className="achievement-img"
             data-aos="zoom-in"

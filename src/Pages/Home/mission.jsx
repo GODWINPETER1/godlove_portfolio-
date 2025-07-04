@@ -98,7 +98,7 @@ function MissionSection() {
             data-aos-delay="600"
             data-aos-duration="800"
           >
-            <img src="./img/mission.jpg" alt="Mission Godlove" />
+            <img src="./img/mission.png" alt="Mission Godlove" />
           </div>
           <div 
             className="image-overlay"
