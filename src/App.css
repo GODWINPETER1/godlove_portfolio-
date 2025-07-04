@@ -23,6 +23,11 @@
   --about-heading: #222;
   --about-label: #999;
   --about-text: #444;
+  --footer-bg: #f8f9fa;
+  --footer-text: #212529;
+  --footer-link: #444;
+  --footer-muted: #666;
+  --footer-divider: rgba(0, 0, 0, 0.1);
 
 }
 
@@ -61,6 +66,11 @@ p {
   --about-heading: #f3f4f6;
   --about-label: #9ca3af;
   --about-text: #d1d5db;
+  --footer-bg: #101215;
+  --footer-text: #f1f1f1;
+  --footer-link: #bbb;
+  --footer-muted: #888;
+  --footer-divider: rgba(255, 255, 255, 0.15);
 }
 .btn {
   font-family: "Roboto";
