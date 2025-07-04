@@ -511,6 +511,9 @@ h2 {
   .about-text-content {
     align-items: center;
   }
+  .navbar--logo img{
+    height: 100px;
+  }
 }
 
 
@@ -1541,6 +1544,8 @@ input[type="checkbox"] {
   }
   .nav__hamburger {
     display: flex;
+    position: relative;
+    top: 10px;
     z-index: 200;
   }
   .nav-toggle{
