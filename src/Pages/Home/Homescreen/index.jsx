@@ -7,6 +7,7 @@ import Testimonial from "../Testimonials";
 import PoliticalSection from "../Political";
 import MissionSection from "../mission";
 import CoreValuesSection from "../core";
+import YouTubeSection from "../youtube";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <PoliticalSection/>
       <MissionSection/>
       <CoreValuesSection/>
+      <YouTubeSection/>
       <Testimonial />
       <Footer />
     </>

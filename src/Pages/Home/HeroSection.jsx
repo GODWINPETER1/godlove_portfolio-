@@ -28,8 +28,8 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            <br /> Dolorum, quas. Amet soluta assumenda cum?
+          Empowering lives through faith, purpose, and leadership.
+          Standing for hope, transformation, and the dignity of all people.
           </p>
         </div>
         <button className="btn btn-primary">Get In Touch</button>

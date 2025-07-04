@@ -398,6 +398,7 @@ h2 {
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 /* Rounded bakcground shape */
@@ -415,6 +416,7 @@ h2 {
 
 .hero-person-image{
   position: relative;
+  bottom: 20px;
   z-index: 2;
   width: 90%;
   object-fit: cover;
@@ -1401,6 +1403,7 @@ input[type="checkbox"] {
     font-size: 68px;
     line-height: 70px;
   }
+  
   .skills--section--title {
     font-size: 28px;
     line-height: 40px;
@@ -1415,6 +1418,7 @@ input[type="checkbox"] {
   .skills--section--container {
     gap: 16px;
   }
+  
   .skills--section--card {
     gap: 28px;
   }
@@ -1661,4 +1665,85 @@ html {
     transform: translateY(-10px);
   }
 }
+/* youtube */
+.youtube-section {
+  padding: 100px 30px;
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  color: #fff;
+  text-align: center;
+}
+
+.youtube-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.youtube-header p {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.7;
+}
+
+.youtube-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+
+.video-card {
+  width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+.subscribe-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .youtube-heading {
+    font-size: 2rem;
+  }
+  .youtube-description {
+    font-size: 1rem;
+  }
+}
+
 
