@@ -93,7 +93,7 @@ function PoliticalSection() {
           data-aos-easing="ease-out-cubic"
         >
           <img 
-            src="./img/poli.jpg" 
+            src="./img/poli.png" 
             alt="Chief Godlove MP 2025" 
             data-aos="zoom-in"
             data-aos-delay="500"
