@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #5e3bee;
+  --primary: #1a1629;
   --heading-color: #282938;
   --bg-shade: #f5fcff;
   --github: #e62872;
@@ -15,20 +15,52 @@
   --text-color: #000000;
   --navbar-bg: #ffff;
   --card-bg: #f9f9f9;
-  --hero-bg: #f6f8fa;
+  --hero-bg: linear-gradient(135deg, #8b0000, #ff4d4d);
   --hero-title-color: #181c22;
   --hero-highlight-color: #d97706;
+  --hero-btn: linear-gradient(135deg, #8b0000, #ff4d4d);
   --hero-description-color: #4b5563;
-  --about-bg: #fafafa;
-  --about-heading: #222;
-  --about-label: #999;
-  --about-text: #444;
+  --btn-primary: #8b0000;
+  --about-bg: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+  --about-heading: #111;
+  --about-label: #8b0000;
+  --about-text: #333;
   --footer-bg: #f8f9fa;
   --footer-text: #212529;
   --footer-link: #444;
   --footer-muted: #666;
   --footer-divider: rgba(0, 0, 0, 0.1);
-
+  --achievements-bg: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+  --achievements-text: #333;
+  --achievements-caption: #444;
+  --achievements-heading: #111;
+  --achievements-bullet: #c62828; /* Red gradient accent */
+  --mission-bg: linear-gradient(135deg, #fff, #f7f9fa);
+  --mission-text: #333;
+  --mission-heading: #000;
+  --mission-underline: linear-gradient(90deg, #d32f2f, #000000);
+  --mission-item-bg: rgba(255, 255, 255, 0.9);
+  --mission-item-hover-bg: rgba(255, 255, 255, 1);
+  --mission-item-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --mission-item-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --mission-img-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  --mission-overlay: linear-gradient(45deg, rgba(255, 0, 0, 0.15), rgba(0, 0, 0, 0.1));
+  --political-bg: linear-gradient(135deg, #ffffff, #fdf5f5);
+  --political-text: #222;
+  --political-heading: #111;
+  --political-subheading: #c62828;
+  --political-quote-bg: #f8f8f8;
+  --political-quote-border: #c62828;
+  --political-quote-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  --political-img-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+  --core-bg: linear-gradient(120deg, #ffffff, #fbe9e9);
+  --core-heading: #000;
+  --core-subtext: #555;
+  --core-card-bg: rgba(255, 255, 255, 0.85);
+  --core-card-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  --core-card-hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  --core-card-heading: #222;
+  --core-card-text: #666;
 }
 
 body {
@@ -62,15 +94,47 @@ p {
   --hero-title-color: #f9fafb;
   --hero-highlight-color: #facc15;
   --hero-description-color: #e5e7eb;
-  --about-bg: #111827;
-  --about-heading: #f3f4f6;
-  --about-label: #9ca3af;
-  --about-text: #d1d5db;
+  --btn-primary: #8b0000;
+  --about-bg: linear-gradient(to bottom right, #1c1c1c, #111);
+  --about-heading: #fff;
+  --about-label: #ff4d4d;
+  --about-text: #ddd;
   --footer-bg: #101215;
   --footer-text: #f1f1f1;
   --footer-link: #bbb;
   --footer-muted: #888;
   --footer-divider: rgba(255, 255, 255, 0.15);
+  --achievements-bg: linear-gradient(to bottom right, #1a1a1a, #000);
+  --achievements-text: #dddddd;
+  --achievements-caption: #bbbbbb;
+  --achievements-heading: #ffffff;
+  --achievements-bullet: #ff5252;
+  --mission-bg: linear-gradient(135deg, #121212, #000);
+  --mission-text: #e0e0e0;
+  --mission-heading: #ffffff;
+  --mission-underline: linear-gradient(90deg, #ff5252, #e53935);
+  --mission-item-bg: rgba(255, 255, 255, 0.05);
+  --mission-item-hover-bg: rgba(255, 255, 255, 0.08);
+  --mission-item-shadow: 0 4px 15px rgba(255, 255, 255, 0.03);
+  --mission-item-hover-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+  --mission-img-shadow: 0 5px 25px rgba(255, 255, 255, 0.08);
+  --mission-overlay: linear-gradient(45deg, rgba(255, 82, 82, 0.2), rgba(0, 0, 0, 0.3));
+  --political-bg: linear-gradient(135deg, #121212, #1b1b1b);
+  --political-text: #e0e0e0;
+  --political-heading: #ffffff;
+  --political-subheading: #ff5252;
+  --political-quote-bg: rgba(255, 255, 255, 0.05);
+  --political-quote-border: #ff5252;
+  --political-quote-shadow: 0 3px 8px rgba(255, 255, 255, 0.05);
+  --political-img-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  --core-bg: linear-gradient(120deg, #1c1c1c, #2c2c2c);
+  --core-heading: #fff;
+  --core-subtext: #ccc;
+  --core-card-bg: rgba(40, 40, 40, 0.9);
+  --core-card-shadow: 0 10px 25px rgba(255, 255, 255, 0.04);
+  --core-card-hover-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
+  --core-card-heading: #fff;
+  --core-card-text: #bbb;
 }
 .btn {
   font-family: "Roboto";
@@ -105,7 +169,7 @@ p {
 }
 .btn-primary {
   color: var(--white);
-  background-color: #111827;
+  background-color: var(--btn-primary);
   border-radius: 4px;
   color: #ffff;
   border: none;
@@ -219,6 +283,15 @@ h2 {
   left: 0;
   right: 0;
   z-index: 1000;
+}
+.navbar--logo {
+  display: flex;
+  align-items: center;
+}
+.navbar--logo img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
 }
 .navbar--right {
   display: flex;
@@ -351,82 +424,77 @@ h2 {
 
 /* about */
 .about-section {
-  padding: 80px 30px;
-  background-color: var(--about-bg);
+  padding: 100px 30px;
+  background: var(--about-bg);
+  transition: background 0.3s ease;
 }
 
 .about-content-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   gap: 60px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .about-image-container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  flex-shrink: 0;
-}
-
-.brush-bg {
-  position: absolute;
-  top: -30px;
-  left: -30px;
   width: 320px;
-  opacity: 0.3;
-  z-index: 1;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .person-photo {
-  position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  z-index: 2;
+  display: block;
 }
 
 .about-text-content {
   flex: 1;
   max-width: 600px;
+  color: var(--about-text);
 }
 
 .section-label {
   font-size: 14px;
   color: var(--about-label);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
 }
 
 .about-heading {
   font-size: 2.5rem;
-  margin-bottom: 20px;
   color: var(--about-heading);
+  margin-bottom: 20px;
 }
 
 .about-description {
   font-size: 1rem;
   color: var(--about-text);
   margin-bottom: 16px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive tweaks */
+@media (max-width: 768px) {
   .about-content-wrapper {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-image-container {
-    margin-bottom: 30px;
+  .about-text-content {
+    align-items: center;
   }
 }
+
 
 
 /* Skills Section Style */
@@ -895,7 +963,8 @@ input[type="checkbox"] {
 
 .achievements-section {
   padding: 80px 30px;
-  background-color: #f9f9f9;
+  background: var(--achievements-bg);
+  transition: background 0.3s ease;
 }
 
 .achievements-container {
@@ -924,7 +993,7 @@ input[type="checkbox"] {
 .image-caption {
   margin-top: 12px;
   font-style: italic;
-  color: #444;
+  color: var(--achievements-caption);
   font-size: 1rem;
 }
 
@@ -935,7 +1004,7 @@ input[type="checkbox"] {
 .achievements-text-box h2 {
   font-size: 2rem;
   margin-bottom: 24px;
-  color: #222;
+  color: var(--achievements-heading);
 }
 
 .achievement-list {
@@ -947,11 +1016,11 @@ input[type="checkbox"] {
   margin-bottom: 16px;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--achievements-text);
 }
 
 .achievement-list li span {
-  color: #006b6a;
+  color: var(--achievements-bullet);
   font-weight: bold;
   margin-right: 6px;
   font-size: 1.2rem;
@@ -970,8 +1039,9 @@ input[type="checkbox"] {
 /* politica section */
 .political-section {
   padding: 80px 30px;
-  background: #ffffff;
-  color: #222;
+  background: var(--political-bg);
+  color: var(--political-text);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .political-container {
@@ -989,13 +1059,13 @@ input[type="checkbox"] {
 
 .political-heading {
   font-size: 2.2rem;
-  color: #111;
+  color: var(--political-heading);
   font-weight: bold;
 }
 
 .political-subheading {
   font-size: 1.6rem;
-  color: #007b5e;
+  color: var(--political-subheading);
   margin-top: 5px;
 }
 
@@ -1021,11 +1091,11 @@ input[type="checkbox"] {
 
 .political-quote {
   margin-top: 30px;
-  background: #f2f2f2;
-  border-left: 5px solid #007b5e;
+  background: var(--political-quote-bg);
+  border-left: 5px solid var(--political-quote-border);
   padding: 20px;
   font-style: italic;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--political-quote-shadow);
 }
 
 .political-quote span {
@@ -1033,7 +1103,7 @@ input[type="checkbox"] {
   margin-top: 10px;
   font-weight: bold;
   font-style: normal;
-  color: #007b5e;
+  color: var(--political-subheading);
 }
 
 .political-image {
@@ -1045,7 +1115,7 @@ input[type="checkbox"] {
   width: 100%;
   max-width: 400px;
   border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--political-img-shadow);
 }
 
 @media screen and (max-width: 768px) {
@@ -1063,9 +1133,10 @@ input[type="checkbox"] {
 .mission-section {
   padding: 80px 30px;
   position: relative;
-  background: linear-gradient(135deg, #ffffff, #f7f9fa);
-  color: #333;
+  background: var(--mission-bg);
+  color: var(--mission-text);
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .mission-wrapper {
@@ -1085,7 +1156,7 @@ input[type="checkbox"] {
 .mission-title {
   display: inline-block;
   font-size: 2.2rem;
-  color: #000;
+  color: var(--mission-heading);
   font-weight: bold;
   position: relative;
   display: inline-block;
@@ -1101,7 +1172,7 @@ input[type="checkbox"] {
   bottom: 0;
   left: 0;
   border-radius: 2px;
-  background: linear-gradient(90deg, #4a90e2, #8e44ad);
+  background: var(--mission-underline);
   transition: width 1s ease;
 }
 [data-aos="flip-down"].aos-animate .mission-title::after {
@@ -1123,9 +1194,9 @@ input[type="checkbox"] {
 .mission-list li {
   padding: 15px;
   margin-bottom: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--mission-item-bg);
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--mission-item-shadow);
   transform: translateX(-20px);
   opacity: 0;
   transition: all 0.5s ease, transform 0.3s ease;
@@ -1135,9 +1206,9 @@ input[type="checkbox"] {
   opacity: 1;
 }
 .mission-list li:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--mission-item-hover-bg);
   transform: translateY(-5px) !important;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--mission-item-hover-shadow);
 }
 
 .mission-image {
@@ -1154,7 +1225,7 @@ input[type="checkbox"] {
   border-radius: 20px;
   transform: transform 1.2s ease;
   transform: scale(1.1);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--mission-img-shadow);
 }
 [data-aos].aos-animate .mission-image img {
   transform: scale(1);
@@ -1172,7 +1243,7 @@ input[type="checkbox"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgba(74, 144, 226, 0.2), rgba(142, 68, 173, 0.2));
+  background: var(--mission-overlay);
   border-radius: 10px;
   opacity: 0;
   transition: opacity 1s ease;
@@ -1187,7 +1258,7 @@ input[type="checkbox"] {
 .image-container {
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--mission-img-shadow);
   transform: rotateY(15deg) scale(0.9);
   opacity: 0.8;
   transition: all 1s ease;
@@ -1213,22 +1284,24 @@ input[type="checkbox"] {
 .core-values-section {
   position: relative;
   padding: 100px 30px;
-  background: linear-gradient(120deg, #ffffff, #f2f2f2);
+  background: var(--core-bg);
   overflow: hidden;
   text-align: center;
+  transition: background 0.4s ease;
 }
 
 .core-values-header h2 {
   font-size: 2.5rem;
-  color: #000;
+  color: var(--core-heading);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .core-values-header p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--core-subtext);
   margin-bottom: 50px;
+  transition: color 0.3s ease;
 }
 
 .core-values-container {
@@ -1239,18 +1312,18 @@ input[type="checkbox"] {
 }
 
 .value-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--core-card-bg);
   border-radius: 16px;
   padding: 30px 20px;
   width: 260px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  box-shadow: var(--core-card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(4px);
 }
 
 .value-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--core-card-hover-shadow);
 }
 
 .value-card .icon {
@@ -1260,13 +1333,13 @@ input[type="checkbox"] {
 
 .value-card h3 {
   font-size: 1.4rem;
-  color: #222;
+  color: var(--core-card-heading);
   margin-bottom: 10px;
 }
 
 .value-card p {
   font-size: 1rem;
-  color: #666;
+  color: var(--core-card-text);
   line-height: 1.5;
 }
 

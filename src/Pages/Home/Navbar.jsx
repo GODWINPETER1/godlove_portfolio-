@@ -32,8 +32,8 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        <h2>GODLOVE</h2>
+      <div className="navbar--logo">
+           <img src="./img/red_logo.png" alt="Godlove Logo" />
       </div>
 
       <a
