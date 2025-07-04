@@ -15,11 +15,11 @@
   --text-color: #000000;
   --navbar-bg: #ffff;
   --card-bg: #f9f9f9;
-  --hero-bg: linear-gradient(135deg, #8b0000, #ff4d4d);
-  --hero-title-color: #181c22;
-  --hero-highlight-color: #d97706;
-  --hero-btn: linear-gradient(135deg, #8b0000, #ff4d4d);
-  --hero-description-color: #4b5563;
+  --hero-bg: #fff;
+  --hero-title-color: #000;
+  --hero-highlight-color: #e74c3c; /* red accent */
+  --hero-description-color: #444;
+  --hero-image-bg: #D6EBF9;
   --btn-primary: #8b0000;
   --about-bg: linear-gradient(to bottom right, #ffffff, #f8f9fa);
   --about-heading: #111;
@@ -61,6 +61,13 @@
   --core-card-hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   --core-card-heading: #222;
   --core-card-text: #666;
+  --testimonial-bg: linear-gradient(120deg, #ffffff, #fff5f5);
+  --testimonial-heading: #111;
+  --testimonial-subtext: #555;
+  --testimonial-text: #333;
+  --testimonial-border: #e74c3c; /* red tone */
+  --testimonial-card-bg: #ffffff;
+  --testimonial-card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -90,10 +97,11 @@ p {
   --primary: #1e90ff;
   --navbar-bg: #1c1c1c;
   --card-bg: #1a1a1a;
-  --hero-bg: #0f172a;
-  --hero-title-color: #f9fafb;
-  --hero-highlight-color: #facc15;
-  --hero-description-color: #e5e7eb;
+  --hero-bg: #121212;
+  --hero-title-color: #fff;
+  --hero-highlight-color: #ff6b6b;
+  --hero-description-color: #ccc;
+  --hero-image-bg: #222;
   --btn-primary: #8b0000;
   --about-bg: linear-gradient(to bottom right, #1c1c1c, #111);
   --about-heading: #fff;
@@ -135,6 +143,13 @@ p {
   --core-card-hover-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
   --core-card-heading: #fff;
   --core-card-text: #bbb;
+  --testimonial-bg: linear-gradient(120deg, #1c1c1c, #2a2a2a);
+  --testimonial-heading: #ffffff;
+  --testimonial-subtext: #cccccc;
+  --testimonial-text: #dddddd;
+  --testimonial-border: #e74c3c;
+  --testimonial-card-bg: rgba(30, 30, 30, 0.9);
+  --testimonial-card-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
 }
 .btn {
   font-family: "Roboto";
@@ -387,7 +402,7 @@ h2 {
 
 /* Rounded bakcground shape */
 .image-background-shape {
-  background-color: #D6EBF9;
+  background-color: var(--hero-image-bg);
   width: 400px;
   height: 500px;
   border-radius: 32px;
@@ -395,6 +410,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .hero-person-image{
@@ -693,10 +709,12 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
-  background-color: var(--bg-shade);
+  background-color: var(--testimonial-bg);
+  transition: background-color 0.3s ease;
 }
 .sections--heading {
-  color: var(--heading-color);
+  color: var(--testimonial-heading);
+  transition: color 0.3s ease;
 }
 .testimonial--section--card {
   display: flex;
@@ -706,7 +724,10 @@ h2 {
   gap: 42.6px;
   flex: 1 0 0;
   border-radius: 8px;
-  border: 1.33px solid #006b6a;
+  border: 1.33px solid var(--testimonial-border);
+  background: var(--testimonial-card-bg);
+  box-shadow: var(--testimonial-card-shadow);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 .testimonial--section--card--reviews {
   display: flex;
@@ -720,13 +741,18 @@ h2 {
 }
 .testimonial--author--name {
   font-weight: 600;
-  color: var(--heading-color);
+  color: var(--testimonial-heading);
 }
 .testimonial--author--designation {
-  color: var(--darkblue);
+  color: var(--testimonial-subtext);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+}
+.text-md {
+  color: var(--testimonial-text);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 /* Testimonial Ends */
 .contact--section {
