@@ -3,11 +3,11 @@ export default function HeroSection() {
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
         <div className="hero--section--content">
-          <p className="section--title">Hey, I'm John</p>
+          <p className="section--title">Hey, I'm Godlove Mwakibete</p>
           <h1 className="hero--section--title">
-            <span className="hero--section-title--color">Full Stack</span>{" "}
+            <span className="hero--section-title--color">Motivation</span>{" "}
             <br />
-            Developer
+            Speaker
           </h1>
           <p className="hero--section-description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -16,8 +16,13 @@ export default function HeroSection() {
         </div>
         <button className="btn btn-primary">Get In Touch</button>
       </div>
-      <div className="hero--section--img">
-        <img src="./img/hero_img.png" alt="Hero Section" />
+      <div className="hero--section--img modern-hero-img">
+        <div className="image-background-shape">
+              <img className="hero-person-image" src="./img/hero3.png" alt="Hero Section" />
+              <img className="sparkle sparkle-top-left" src="./img/sparkl.png" alt="" />
+              <img className="sparkle sparkle-bottom-right" src="./img/sparkl.png" alt="" />
+        </div>
+        
       </div>
     </section>
   );

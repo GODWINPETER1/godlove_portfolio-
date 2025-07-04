@@ -1,82 +1,75 @@
-export default function ContactMe() {
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+function AchievementsSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-quad',
+      once: true,
+      mirror: false
+    });
+  }, []);
+
   return (
-    <section id="Contact" className="contact--section">
-      <div>
-        <p className="sub--title">Get In Touch</p>
-        <h2>Contact Me</h2>
-        <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
-        </p>
-      </div>
-      <form className="contact--form--container">
-        <div className="container">
-          <label htmlFor="first-name" className="contact--label">
-            <span className="text-md">First Name</span>
-            <input
-              type="text"
-              className="contact--input text-md"
-              name="first-name"
-              id="first-name"
-              required
-            />
-          </label>
-          <label htmlFor="last-name" className="contact--label">
-            <span className="text-md">Last Name</span>
-            <input
-              type="text"
-              className="contact--input text-md"
-              name="last-name"
-              id="last-name"
-              required
-            />
-          </label>
-          <label htmlFor="email" className="contact--label">
-            <span className="text-md">Email</span>
-            <input
-              type="email"
-              className="contact--input text-md"
-              name="email"
-              id="email"
-              required
-            />
-          </label>
-          <label htmlFor="phone-number" className="contact--label">
-            <span className="text-md">phone-number</span>
-            <input
-              type="number"
-              className="contact--input text-md"
-              name="phone-number"
-              id="phone-number"
-              required
-            />
-          </label>
-        </div>
-        <label htmlFor="choode-topic" className="contact--label">
-          <span className="text-md">Choose a topic</span>
-          <select id="choose-topic" className="contact--input text-md">
-            <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
-          </select>
-        </label>
-        <label htmlFor="message" className="contact--label">
-          <span className="text-md">Message</span>
-          <textarea
-            className="contact--input text-md"
-            id="message"
-            rows="8"
-            placeholder="Type your message..."
+    <section className="achievements-section" id="Achievements">
+      <div className="achievements-container">
+        {/* Left: Image with staggered animations */}
+        <div 
+          className="achievements-image-box"
+          data-aos="fade-right"
+          data-aos-delay="150"
+        >
+          <img 
+            src="./img/car.jpg" 
+            alt="Achievement" 
+            className="achievement-img"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           />
-        </label>
-        <label htmlFor="checkboc" className="checkbox--label">
-          <input type="checkbox" required name="checkbox" id="checkbox" />
-          <span className="text-sm">I accept the terms</span>
-        </label>
-        <div>
-          <button className="btn btn-primary contact--form--btn">Submit</button>
+          <p 
+            className="image-caption"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            Turning Dreams into Reality
+          </p>
         </div>
-      </form>
+
+        {/* Right: Achievements Text with staggered animations */}
+        <div 
+          className="achievements-text-box"
+          data-aos="fade-left"
+          data-aos-delay="150"
+        >
+          <h2 data-aos="fade-down" data-aos-delay="250">
+            🏆 Recognition & Achievements
+          </h2>
+          
+          <ul className="achievement-list">
+            <li data-aos="fade-up" data-aos-delay="350">
+              <span>»</span> <strong>Winner of “Best Motivational Speaker in Africa” (2025):</strong>
+              <br />
+              Honored for inspiring transformation across the continent.
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <span>»</span> <strong>Hosted 100+ seminars:</strong> Delivered motivational workshops across Tanzania.
+            </li>
+            <li data-aos="fade-up" data-aos-delay="450">
+              <span>»</span> <strong>Built a business empire:</strong> Offering solutions in multiple industries.
+            </li>
+            <li data-aos="fade-up" data-aos-delay="500">
+              <span>»</span> <strong>Established a volunteer network:</strong> Supporting vulnerable communities.
+            </li>
+            <li data-aos="fade-up" data-aos-delay="550">
+              <span>»</span> <strong>Created a multimedia platform:</strong> Influencing hearts and minds across Africa.
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }
+
+export default AchievementsSection;

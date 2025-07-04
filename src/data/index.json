@@ -3,51 +3,51 @@
     {
       "id": "1",
       "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "",
+      "description": "Eradicate poverty Among vulnerable communities"
     },
     {
       "id": "2",
       "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "",
+      "description": "Motivate youth to become independent and socially response"
     },
     {
       "id": "3",
       "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "",
+      "description": "Offer spiritual healing and Restore Hope"
     },
     {
       "id": "4",
       "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "",
+      "description": "Champion human rights and inclusive governance"
     }
   ],
   "portfolio": [
-    {
-      "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
-    },
-    {
-      "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
-    },
-    {
-      "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
-    }
-  ],
+  {
+    "id": "1",
+    "src": "./img/chief3.png",
+    "title": "CHIEF GODLOVE COMPANY LIMITED",
+    "description": "It acts as a 'Mother Company' housing multiple groups of companies, some active and others in development, ready to venture into any industry--local or international. It is a company without limits.\n\nA powerhouse, limitless conglomerate engaged in every sector imaginable.\n\nChief Godlove Company Limited also deals with Business Consultancy , Motivational Coaching and Spiritual Services.",
+    "link": "View In Github"
+  },
+  {
+    "id": "2",
+    "src": "./img/placeholder-image-1.png",
+    "title": "CHIEF GODLOVE FOUNDATION (CGF)",
+    "description": "As Founder and Director, Chief Godlove leads this non-profit with a mission to serve orphans, widows and underprivileged. CGF provides: Food , clothing and shelter, Medical assistance, Small business funding, Vocational training.",
+    "link": "View In Github"
+  },
+  {
+    "id": "3",
+    "src": "./img/placeholder-image-2.png",
+    "title": "CHIEF G MEDIA",
+    "description": "A powerful media platform launched to spread positivity, share transformational stories and drive social change. The media hub promotes content focused on spirituality , enterpreneurship and community empowerment , reaching audiences across platforms.",
+    "link": "View In Github"
+  }
+],
   "testimonial": [
     {
       "id": "1",

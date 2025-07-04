@@ -5,6 +5,9 @@ import HeroSection from "../HeroSection";
 import MyPortfolio from "../MyPortfolio";
 import MySkills from "../MySkills";
 import Testimonial from "../Testimonials";
+import PoliticalSection from "../Political";
+import MissionSection from "../mission";
+import CoreValuesSection from "../core";
 
 export default function Home() {
   return (
@@ -13,8 +16,11 @@ export default function Home() {
       <MySkills />
       <AboutMe />
       <MyPortfolio />
-      <Testimonial />
       <ContactMe />
+      <PoliticalSection/>
+      <MissionSection/>
+      <CoreValuesSection/>
+      <Testimonial />
       <Footer />
     </>
   );

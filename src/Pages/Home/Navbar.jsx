@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import ThemeToggle from "./ThemeToggle";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -15,28 +16,26 @@ function Navbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu();
       }
     };
 
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu();
     }
   }, []);
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/logo.svg" alt="Logoipsum" />
+        <h2>GODLOVE</h2>
       </div>
+
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
@@ -45,80 +44,67 @@ function Navbar() {
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
       </a>
+
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
-              className="navbar--content"
-            >
+            <Link to="heroSection" onClick={closeMenu} {...linkProps}>
               Home
             </Link>
           </li>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="MyPortfolio"
-              className="navbar--content"
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
+            <Link to="AboutMe" onClick={closeMenu} {...linkProps}>
               About Me
             </Link>
           </li>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="testimonial"
-              className="navbar--content"
-            >
+            <Link to="MyPortfolio" onClick={closeMenu} {...linkProps}>
+              Ventures
+            </Link>
+          </li>
+          <li>
+            <Link to="Achievements" onClick={closeMenu} {...linkProps}>
+              Achievements
+            </Link>
+          </li>
+          <li>
+            <Link to="Politics" onClick={closeMenu} {...linkProps}>
+              Politics
+            </Link>
+          </li>
+          <li>
+            <Link to="Mission" onClick={closeMenu} {...linkProps}>
+              Mission
+            </Link>
+          </li>
+          <li>
+            <Link to="testimonial" onClick={closeMenu} {...linkProps}>
               Testimonials
             </Link>
           </li>
         </ul>
       </div>
+
+      <ThemeToggle/>
+
       <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
         to="Contact"
+        onClick={closeMenu}
         className="btn btn-outline-primary"
+        {...linkProps}
       >
         Contact Me
       </Link>
     </nav>
   );
 }
+
+const linkProps = {
+  activeClass: "navbar--active-content",
+  spy: true,
+  smooth: true,
+  offset: -70,
+  duration: 500,
+};
 
 export default Navbar;
