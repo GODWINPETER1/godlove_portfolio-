@@ -91,7 +91,7 @@ function Navbar() {
       
 
       <Link
-        to="Contact"
+        to="footer"
         onClick={closeMenu}
         className="btn btn-outline-primary"
         {...linkProps}
