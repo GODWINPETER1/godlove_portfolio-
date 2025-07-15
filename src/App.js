@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Pages/Home/Navbar";
 import Home from "./Pages/Home/Homescreen";
 import LogoLoader from "./Pages/Home/logo_loader";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
+          <SpeedInsights/>
         </div>
       </Router>
     </div>
