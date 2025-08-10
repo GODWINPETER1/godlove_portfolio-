@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://chiefgodlove.vip/",
   "private": true,
   "engines": {
     "node": ">=12.x"
@@ -8,9 +9,11 @@
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
     "aos": "^2.3.4",
+    "basic-ftp": "^5.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^3.1.0",
+    "react-icons": "^5.5.0",
+    "react-player": "^3.1.0", 
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
@@ -19,7 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "npm run build && node upload.js"
   },
   "browserslist": {
     "production": [

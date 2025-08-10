@@ -78,8 +78,8 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="testimonial" onClick={closeMenu} {...linkProps}>
-              Testimonials
+            <Link to="gallery" onClick={closeMenu} {...linkProps}>
+              Gallery
             </Link>
           </li>
         </ul>

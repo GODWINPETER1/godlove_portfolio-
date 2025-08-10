@@ -10,9 +10,11 @@ export default function YouTubeSection() {
 
   const videos = [
     "https://www.youtube.com/embed/uAf9ULiDR8c",
-    "https://www.youtube.com/embed/YmGH22l_B4k?si=tZenDI3jeb98b-N6",
+    "https://www.youtube.com/embed/XfQr0C6ViXQ?si=ooGxFdUrhwZEN1Ho",
     "https://www.youtube.com/embed/fvxbJIGE1CI?si=z9A3UK6m05d-z-G5",
+    
   ];
+
 
 
   return (

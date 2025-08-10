@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import React from "react";
+import { FaTwitter, FaInstagram, FaTiktok, FaFacebook, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -8,10 +9,20 @@ function Footer() {
         <div className="footer__brand">
           <h2>GODLOVE</h2>
           <p className="footer__tagline">Empowering Lives, Inspiring Change</p>
+
+          {/* Social Media Links */}
+          <div className="footer__socials">
+            
+            <a href="https://x.com/chiefgodlove1/status/1952408474412802253?s=12" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://www.instagram.com/chiefgodlove_billionaire?igsh=MXRhNGpidTZpOTV5Zw==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://vm.tiktok.com/ZMSoQAbbs/" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+            <a href="https://vm.tiktok.com/ZMSoQAbbs/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://www.youtube.com/@Chief_godlove?reload=9" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          </div>
         </div>
 
         <div className="footer__links">
-          <h4>Quick Links</h4>
+          <h4>Quick Link</h4>
           <ul>
             <li><Link to="heroSection" smooth offset={-70} duration={500}>Home</Link></li>
             <li><Link to="AboutMe" smooth offset={-70} duration={500}>About</Link></li>
@@ -23,10 +34,13 @@ function Footer() {
         <div className="footer__contact">
           <h4>Contact</h4>
           <div className="contact--item">
-            📞 <span>+255 748 830 617</span>
+            <p> 📞 +255 748 830 617 </p>
+            <p> 📞 +255 756 382 285</p>
+            <p> 📞 +255 746 166 686 </p>
+            <p> 📞 +255 758 844 962 </p>
           </div>
           <div className="contact--item">
-            📧 <span>godlovemwakibete12@gmail.com</span>
+             <p>📧 godlovemwakibete12@gmail.com</p>
           </div>
         </div>
       </div>
