@@ -416,7 +416,7 @@ h2 {
 
 .hero-person-image{
   position: relative;
-  bottom: 20px;
+  bottom: -25px;
   z-index: 2;
   width: 90%;
   object-fit: cover;
@@ -441,80 +441,133 @@ h2 {
 /* Hero Section Style Ends */
 
 /* about */
-.about-section {
-  padding: 100px 30px;
-  background: var(--about-bg);
-  transition: background 0.3s ease;
+/* Container */
+.aboutme-section {
+  background: var(--about-bg, #fafafa);
+  padding: 60px 20px;
 }
 
-.about-content-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
+/* Center container and make a two-column layout */
+.aboutme-container {
+  width: min(1200px, 95%);
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left image / right card */
+  gap: 40px;
+  align-items: start;
+  position: relative;
 }
 
-.about-image-container {
-  width: 320px;
-  height: 320px;
-  border-radius: 20px;
+/* LEFT: Image column (large portrait) */
+.aboutme-image-col {
+  width: 100%;
+  height: 690px;               /* large, prominent image */
   overflow: hidden;
-  flex-shrink: 0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
-
-.person-photo {
+.aboutme-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.about-text-content {
-  flex: 1;
-  max-width: 600px;
-  color: var(--about-text);
+/* RIGHT: Card column */
+.aboutme-card-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.section-label {
-  font-size: 14px;
-  color: var(--about-label);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+/* Floating card (pulled up) */
+.aboutme-card {
+  background: #ffffff;
+  max-width: 520px;
+  width: 100%;
+  padding: 36px 36px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  transform: translateY(-90px); /* pulls the card up (a bit up) */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Slight hover lift for polish */
+.aboutme-card:hover {
+  transform: translateY(-100px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.14);
+}
+
+/* Card text styles */
+.aboutme-subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
   margin-bottom: 8px;
+  letter-spacing: 0.6px;
+  text-transform: none;
 }
 
-.about-heading {
-  font-size: 2.5rem;
-  color: var(--about-heading);
-  margin-bottom: 20px;
+.aboutme-name {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 1.9rem;
+  margin: 0 0 18px 0;
+  color: #111;
 }
 
-.about-description {
+.aboutme-text {
+  color: #333;
   font-size: 1rem;
-  color: var(--about-text);
-  margin-bottom: 16px;
-  line-height: 1.8;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .about-content-wrapper {
-    flex-direction: column;
-    text-align: center;
+/* Button (optional) */
+.aboutme-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: #0b4a78;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Responsive: stack on small screens and reduce overlap */
+@media (max-width: 900px) {
+  .aboutme-container {
+    grid-template-columns: 1fr; /* stack */
   }
 
-  .about-text-content {
-    align-items: center;
+  .aboutme-image-col {
+    height: 620px;
   }
-  .navbar--logo img{
-    height: 100px;
+
+  .aboutme-card {
+    transform: translateY(-60px); /* still slightly overlap */
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    max-width: 760px;
   }
 }
+
+@media (max-width: 520px) {
+  .aboutme-image-col {
+    height: 320px;
+  }
+  .aboutme-card {
+    transform: translateY(-40px);
+    padding: 20px;
+  }
+  .aboutme-name {
+    font-size: 1.4rem;
+  }
+}
+
+
 
 
 
@@ -866,6 +919,7 @@ input[type="checkbox"] {
 }
 
 .footer__links ul {
+  cursor: pointer;
   list-style: none;
   padding: 0;
 }

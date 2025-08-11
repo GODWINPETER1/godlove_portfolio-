@@ -34,7 +34,6 @@ function Footer() {
         <div className="footer__contact">
           <h4>Contact</h4>
           <div className="contact--item">
-            <p> 📞 +255 748 830 617 </p>
             <p> 📞 +255 756 382 285</p>
             <p> 📞 +255 746 166 686 </p>
             <p> 📞 +255 758 844 962 </p>

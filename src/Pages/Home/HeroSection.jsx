@@ -37,7 +37,7 @@ export default function HeroSection() {
 
       <div className="hero--section--img modern-hero-img">
         <div className="image-background-shape">
-          <img className="hero-person-image" src="./img/hero3.png" alt="Hero Section" />
+          <img className="hero-person-image" src="./img/hero43.png" alt="Hero Section" />
           <img className="sparkle sparkle-top-left" src="./img/sparkl.png" alt="" />
           <img className="sparkle sparkle-bottom-right" src="./img/sparkl.png" alt="" />
         </div>
