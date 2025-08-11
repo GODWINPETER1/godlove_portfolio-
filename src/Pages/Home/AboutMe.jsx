@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 export default function AboutMe() {
   useEffect(() => {
     AOS.init({ duration: 900, once: true });
@@ -29,6 +28,12 @@ export default function AboutMe() {
             <p className="aboutme-text">
               From humble beginnings in Mbeya, Chief Godlove has risen to national and continental prominence through relentless dedication to social impact, spiritual guidance, and economic empowerment. His journey is one of faith, vision, and action — touching thousands of lives through his ministry, charitable efforts, and public engagements.
             </p>
+
+            {/* Visible Keywords */}
+            <div className="aboutme-keywords" style={{ marginTop: "15px", fontSize: "0.9rem", color: "#666" }}>
+              <strong>Tags:</strong> Freemason, Illuminati, Devil worshiper, Tanzania freemason, Tanzania illuminati, 
+              Nguvu ya pesa na jicho la tatu, Chief godlove, Chiefgodlovebillionaire, 666
+            </div>
           </div>
         </div>
       </div>

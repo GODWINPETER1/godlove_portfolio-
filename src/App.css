@@ -703,13 +703,11 @@ h2 {
   gap: 21.3px;
 }
 .portfolio--section--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 42.6px;
-  width: 100%;
-  align-items: stretch;
 }
+
 .portfolio--section--img {
   border-radius: 8px;
   width: 100%;
